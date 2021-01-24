@@ -1,0 +1,1 @@
+{"virtualbox":{"/home/vagrant/demos":{"guestpath":"/home/vagrant/demos","hostpath":"D:/development/Git Repository/docker/23-01-2021/kubernetes_workspace","disabled":false,"__vagrantfile":true},"/vagrant":{"guestpath":"/vagrant","hostpath":"D:/development/Git Repository/docker/23-01-2021/cluster","disabled":false,"__vagrantfile":true}}}

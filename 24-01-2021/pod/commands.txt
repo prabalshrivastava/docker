@@ -1,0 +1,5 @@
+kubectl get pod
+kubectl create -f pod1.yml
+kubectl get po
+kubectl get pods -o wide
+kubectl describe 

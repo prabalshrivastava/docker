@@ -1,0 +1,17 @@
+IMAGE_NAME = "bento/ubuntu-18.04"
+N = 2
+
+Vagrant.configure("2") do |config|
+  config.vm.provision "shell", path: './init.sh' 
+  config.vm.box = IMAGE_NAME
+
+  (1..N).each do |i|
+      config.vm.define "dnode#{i}" do |node|
+        node.vm.network "private_network", ip: "192.168.50.#{i + 10}"
+        node.vm.hostname = "dnode#{i}"
+        node.vm.provider "virtualbox" do |app|
+          app.name = "dnode#{i}"
+        end 
+      end
+  end
+end
